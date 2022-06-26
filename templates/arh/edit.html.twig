@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Arh{% endblock %}
+
+{% block body %}
+    <h1>Edit Arh</h1>
+
+    {{ include('arh/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_arh_index') }}">back to list</a>
+
+    {{ include('arh/_delete_form.html.twig') }}
+{% endblock %}

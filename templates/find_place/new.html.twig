@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New FindPlace{% endblock %}
+
+{% block body %}
+    <h1>Create new FindPlace</h1>
+
+    {{ include('find_place/_form.html.twig') }}
+
+    <a href="{{ path('app_find_place_index') }}">back to list</a>
+{% endblock %}
